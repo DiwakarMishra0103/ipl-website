@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://pixlok.com/wp-content/uploads/2021/04/IPL-Logo-PNG.jpg" type="image/x-icon">
+    <title>IPL Teams and Players</title>
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./create-team.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div id="nav-bar">
+        <div class="logo">
+            <a href="./home.html"> <img src="./logo.png" alt="logo"></a>
+
+        </div>
+
+        <p><a id="cloth-menu" href="./home.html">Home</a></p>
+        <p><a id="acces-menu" href="./home.html#teams-grid">Team</a></p>
+        <p><a id="acces-menu" href="#teams-records">Record</a></p>
+        <p><a id="acces-menu-button" href="./create-team.html">Creat team</a></p>
+        <p><a id="acces-menu-button" href="./create-player.html">Creat Player</a></p>
+        <div class="container">
+            <input type="text" name="search" id="searchbar" placeholder="Search Player" class="input" />
+
+            <a href="#" class="btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+
+    </div>
+
+
+
+    <section id="add-team">
+        <form id="team-add-form">
+            <h1>Create New Team</h1>
+            <input type="text" class="input-data" id="team-name" placeholder="Enter team name">
+            <input type="text" class="input-data" id="team-icon" placeholder="Enter team logo image url ">
+            <input type="number" class="input-data" id="player-count" placeholder="Enter number of players in the team">
+            <input type="number" class="input-data" id="championship-count"
+                placeholder="Enter number of championships won">
+            <input type="text" class="input-data" id="team-key" placeholder="Enter team key e.g. MI, KKR">
+            <input type="submit" value="Submit" id="submit-btn">
+        </form>
+    </section>
+
+
+    <footer>
+        <h3>© Copyright IPL, BCCI 2021. All Rights Reserved. </h3>
+        <h4>- Made by Diwakar Mishra</h4>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./create-team.js"></script>
+
+</body>
